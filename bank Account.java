@@ -1,14 +1,14 @@
 *
 * represence a current account / saving account for a customer
  */
-public class bank account {
+public class BankAccount {
 
     // instance variables
 
     /**
     *Type of account(saving/ current)
     */
-    String account type;
+    String AccountType;
 
     /**
     * balance for the bank account
@@ -18,7 +18,7 @@ public class bank account {
     /**
     * customer for this bank account 
     */
-    customer customer ;
+    Customer customer ;
 
 
 
@@ -27,8 +27,8 @@ public class bank account {
     *@param account type is either savings of current account 
     @param customer from the customer.java user defined data type
     */
-    public bank account (String account type, customer customer){
-        this. account type= account type;
+    public BankAccount (String account type, customer customer){
+        this. AccountType= account type;
         this.customer =customer ;
     }
 
@@ -51,7 +51,7 @@ public void withdraw (double amount){
         this.balance = this.balance - amount;
     }
     else {
-        system.out.println("balance is less than the given amount ");
+        System.out.println("balance is less than the given amount ");
     }
 }
 
@@ -59,14 +59,14 @@ public void withdraw (double amount){
 * prints the account information of this bank account 
 *@return customer information is returned
 */
-public string getaccount type + " " + this.balance;
+public String getaccount type + " " + this.balance;
 }
 
 /**
 * prints  the customer information of this bank account
 *return customer information is returned 
 */
-public string getcustomer info(){
+public String getcustomer info(){
     return this.customer.name + " "+this.customer.address +" "+this.customer.age;
 }
  public double get intrest payment(double amount, double rate-of-interest, int time_in_years){
