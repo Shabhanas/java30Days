@@ -19,7 +19,7 @@ public class bank {
 
         mybank.open();
         // welcome message 
-        system.out.println("welcome to the bank");
+        System.out.println("welcome to the bank");
 
         scanner sc=new scanner (system.in);
 
@@ -45,7 +45,7 @@ public class bank {
         c1.setAge(age);
      
 Bankaccount savingsAccount = new BankAccount("savings", c1);
- Bankaccount curentAccount = new BankAccount("current", c1);
+ Bankaccount currentAccount = new BankAccount("current", c1);
 Bankaccount loanAccount = new BankAccount("loan", c1);
 
 
@@ -80,7 +80,7 @@ system.out.println();
 system.out.println("customer information is" + curentAccount.getAccountinfo());
 system.out.println("account information is"+ currentAccount.getAccountinfo());
 
-system.out.println("how much would like to  deposit in your currrent Account ?");
+system.out.println("how much would like to  deposit in your current Account ?");
 double currentAmount =sc.nextDouble();
 savingsAccount.deposit(currentamount);
 
@@ -99,8 +99,8 @@ double interest = loanAccount.get interestpayment(loanmoney, rate_of_interest, t
 double dept = loanmoney+interest;
 system.out.println("you have to total dept of Rs." + dept);
 
-system.out.println("you have to pay interest of" + interest);
-system.out.println("your net worth will be"+ (savingsAccount.balance + currentAccount.balance - loanmoney-interest));
+System.out.println("you have to pay interest of" + interest);
+System.out.println("your net worth will be"+ (savingsAccount.balance + currentAccount.balance - loanmoney-interest));
 mybank.close();
 
  }
