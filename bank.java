@@ -24,18 +24,18 @@ public class bank {
         scanner sc=new scanner (system.in);
 
         // Takes the name of the customer from the user
-        system.out.println("Enter the name of the customer");
-        string name = sc.nextline();
+        System.out.println("Enter the name of the customer");
+        String name = sc.nextline();
 
         // creates the customer with given name
         customer c1 = new customer(name);
 
         //Greeting message
-        system.out.println("we are creating a current and saving account for you :) ");
+        System.out.println("we are creating a current and saving account for you :) ");
 
         // Taking addess of customer from the user
-        system.out.println( "what is your address ?");
-        string address=sc.nextLine();
+        System.out.println( "what is your address ?");
+        String address=sc.nextLine();
 
         //sets the address to the customer 
         c1.setAddress(address);
@@ -77,7 +77,7 @@ system.out.println("account information is"+ savingsAccount.getAccountinfo());
 
 system.out.println();
 
-system.out.println("customer information is" + curentAccount.getAccountinfo());
+system.out.println("customer information is" + currentAccount.getAccountinfo());
 system.out.println("account information is"+ currentAccount.getAccountinfo());
 
 system.out.println("how much would like to  deposit in your current Account ?");
@@ -88,7 +88,7 @@ system.out.println("account information is"+ currentAccount.getAccountinfo());
 
 system.out.println("we have created a loan account for you");
 system.out.println("How much loan would you have ?");
-doble loanmoney = sc.nextDouble();
+double loanmoney = sc.nextDouble();
 
 
 system.out.println("when are you going to repay the amount");
