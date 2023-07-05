@@ -50,54 +50,54 @@ Bankaccount loanAccount = new BankAccount("loan", c1);
 
 
 
-system.out.println();
+System.out.println();
 
 
-system.out.println("customer information is"+ savingsAccount.getcustomerinfo());
-system.out.println("Account information is"+ savingsAccount.getAccountinfo());
+System.out.println("customer information is"+ savingsAccount.getcustomerinfo());
+System.out.println("Account information is"+ savingsAccount.getAccountinfo());
 
 
-system.out.println("mr ."+savingsAccount.customer.name );
-system.out.println("How much would like to deposit ?");
+System.out.println("mr ."+savingsAccount.customer.name );
+System.out.println("How much would like to deposit ?");
 
 double depositwAmount =sc.nextDouble();
-savingsAccount.deposit(depositamount);
+SavingsAccount.deposit(depositamount);
 
-system.out.println("account information is"+ savingsAccount.getAccountinfo());
+System.out.println("account information is"+ savingsAccount.getAccountinfo());
 
-system.out.println("mr ."+savingsAccount.customer.name );
-system.out.println("How much would like to withdraw ?");
+System.out.println("mr ."+savingsAccount.customer.name );
+System.out.println("How much would like to withdraw ?");
 
 
 double withdrawAmount =sc.nextDouble();
 savingsAccount.withdraw(withdrawamount);
 
 
-system.out.println("account information is"+ savingsAccount.getAccountinfo());
+System.out.println("account information is"+ savingsAccount.getAccountinfo());
 
-system.out.println();
+System.out.println();
 
-system.out.println("customer information is" + currentAccount.getAccountinfo());
-system.out.println("account information is"+ currentAccount.getAccountinfo());
+System.out.println("customer information is" + currentAccount.getAccountinfo());
+System.out.println("account information is"+ currentAccount.getAccountinfo());
 
-system.out.println("how much would like to  deposit in your current Account ?");
+System.out.println("how much would like to  deposit in your current Account ?");
 double currentAmount =sc.nextDouble();
 savingsAccount.deposit(currentamount);
 
-system.out.println("account information is"+ currentAccount.getAccountinfo());
+System.out.println("account information is"+ currentAccount.getAccountinfo());
 
-system.out.println("we have created a loan account for you");
-system.out.println("How much loan would you have ?");
+System.out.println("we have created a loan account for you");
+System.out.println("How much loan would you have ?");
 double loanmoney = sc.nextDouble();
 
 
-system.out.println("when are you going to repay the amount");
+System.out.println("when are you going to repay the amount");
 int time_in_years =sc.nextDouble();
 
 double interest = loanAccount.get interestpayment(loanmoney, rate_of_interest, time_in_years);
 
 double dept = loanmoney+interest;
-system.out.println("you have to total dept of Rs." + dept);
+System.out.println("you have to total dept of Rs." + dept);
 
 System.out.println("you have to pay interest of" + interest);
 System.out.println("your net worth will be"+ (savingsAccount.balance + currentAccount.balance - loanmoney-interest));
